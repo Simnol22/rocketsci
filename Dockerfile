@@ -27,7 +27,3 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install Conan
 RUN pip install conan
-
-# Install GitHub public key fingerprint
-RUN mkdir ~/.ssh
-RUN ssh-keyscan github.com >> ~/.ssh/known_hosts
