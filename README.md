@@ -1,11 +1,16 @@
 # CxxCI
 
-A Docker image for C++ CI workflows, based on Ubuntu 20.04
+A Docker image for C++ CI workflows, based on Ubuntu 22.04 or 20.04
 
-Includes:
+Available tags:
 
- - Python3
- - Conan
- - GCC, G++ 10
- - CMake 3.22+ (from Kitware's APT)
- - Ninja
+- `focal`, `latest`: Ubuntu 20.04, with GCC 10
+- `jammy`: Ubuntu 22.04, with GCC 12
+
+Either versions also include:
+
+- Git
+- Python3
+- Conan
+- CMake 3.22+ (from Kitware's APT)
+- Ninja
