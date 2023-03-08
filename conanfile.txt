@@ -1,5 +1,5 @@
 [requires]
-qt/6.2.4
+qt/6.3.1
 dbus/1.15.2
 protobuf/3.21.4
 nlohmann_json/3.11.2
@@ -9,17 +9,17 @@ openssl/1.1.1q
 zlib/1.2.13
 
 [options]
-qt/6.2.4:shared=True
-qt/6.2.4:qtcharts=True
-qt/6.2.4:with_mysql=False
-qt/6.2.4:with_pq=False
-qt/6.2.4:with_sqlite3=False
-qt/6.2.4:with_odbc=False
-qt/6.2.4:with_dbus=True
+qt:shared=True
+qt:qtcharts=True
+qt:with_mysql=False
+qt:with_pq=False
+qt:with_sqlite3=False
+qt:with_odbc=False
+qt:with_dbus=True
  
 [generators]
 cmake
-cmake_paths 
+cmake_paths
 
 [imports]
 bin, *.dll -> ./bin
