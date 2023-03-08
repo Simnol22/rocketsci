@@ -23,10 +23,10 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Ubuntu 20.04
-        run: docker build . -t ghcr.io/Simnol22/rocketsci:latest -t ghcr.io/Simnol22/cxxci:focal --build-arg DISTRO=focal --build-arg COMPILER=10
+        run: docker build . -t ghcr.io/simnol22/rocketsci:latest -t ghcr.io/simnol22/cxxci:focal --build-arg DISTRO=focal --build-arg COMPILER=10
       
       - name: Build Ubuntu 22.04
-        run: docker build . -t ghcr.io/Simnol22/rocketsci:jammy --build-arg DISTRO=jammy --build-arg COMPILER=12
+        run: docker build . -t ghcr.io/simnol22/rocketsci:jammy --build-arg DISTRO=jammy --build-arg COMPILER=12
 
       - name: Push
-        run: docker push --all-tags ghcr.io/Simnol22/rocketsci
+        run: docker push --all-tags ghcr.io/simnol22/rocketsci
