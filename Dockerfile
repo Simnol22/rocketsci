@@ -18,7 +18,8 @@ RUN apt-get install -y \
     ssh \ 
     sudo \ 
     wget \
-    libgl-dev
+    libgl-dev \ 
+    xkb-data
 
 RUN apt-get install -y g++-${COMPILER} gcc-${COMPILER}
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-${COMPILER} 10
