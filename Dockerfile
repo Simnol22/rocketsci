@@ -17,7 +17,8 @@ RUN apt-get install -y \
     python3-pip \
     ssh \ 
     sudo \ 
-    wget
+    wget \
+    libgl-dev
 
 RUN apt-get install -y g++-${COMPILER} gcc-${COMPILER}
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-${COMPILER} 10
