@@ -1,0 +1,29 @@
+[requires]
+qt/6.2.4
+dbus/1.15.2
+protobuf/3.21.4
+nlohmann_json/3.11.2
+gtest/1.12.1
+expat/2.4.9
+openssl/1.1.1q
+zlib/1.2.13
+
+[options]
+qt:shared=True
+qt:qtcharts=True
+qt:with_mysql=False
+qt:with_pq=False
+qt:with_sqlite3=False
+qt:with_odbc=False
+qt:with_dbus=True
+ 
+[generators]
+cmake
+cmake_paths 
+
+[imports]
+bin, *.dll -> ./bin
+res/archdatadir/, *.dll -> ./res/archdatadir
+res/archdatadir/plugins/platforms, *.dll -> ./bin/platforms
+lib, *.so* -> ./lib
+res/archdatadir/, *.so -> ./res/archdatadir

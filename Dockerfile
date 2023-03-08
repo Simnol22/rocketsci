@@ -32,6 +32,10 @@ RUN apt-get install -y cmake
 # Clean temporary files
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Copying dependencies
+COPY conanfile.txt .
+
 # Install Conan
 RUN pip install conan
-RUN conan profile new default --detect
+RUN conan install . -- update --build=missing -s compiler.version=10 -s compiler.libcxx=libstdc++11 -s build_type=Release
+
