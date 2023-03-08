@@ -37,5 +37,5 @@ COPY conanfile.txt .
 
 # Install Conan
 RUN pip install conan
-RUN conan install . -- update --build=missing -s compiler.version=10 -s compiler.libcxx=libstdc++11 -s build_type=Release
+RUN conan install . --update --build=missing -s compiler.version=10 -s compiler.libcxx=libstdc++11 -s build_type=Release
 
