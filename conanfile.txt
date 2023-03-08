@@ -9,13 +9,13 @@ openssl/1.1.1q
 zlib/1.2.13
 
 [options]
-qt:shared=True
-qt:qtcharts=True
-qt:with_mysql=False
-qt:with_pq=False
-qt:with_sqlite3=False
-qt:with_odbc=False
-qt:with_dbus=True
+qt/6.2.4:shared=True
+qt/6.2.4:qtcharts=True
+qt/6.2.4:with_mysql=False
+qt/6.2.4:with_pq=False
+qt/6.2.4:with_sqlite3=False
+qt/6.2.4:with_odbc=False
+qt/6.2.4:with_dbus=True
  
 [generators]
 cmake
